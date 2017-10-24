@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    jndi-name: jdbc/potafish/pblog
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
