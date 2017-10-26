@@ -34,10 +34,10 @@
     <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
     -->
 	<Resource name="jdbc/potafish/pblog" auth="Container" type="javax.sql.DataSource"
-              url="jdbc:mysql://potafish.imwork.net:11854/pblog?characterEncoding=utf8"
+              url="jdbc:mysql://www.potafish.com:3306/pblog_dev?characterEncoding=utf8"
               driverClassName="com.mysql.jdbc.Driver"
-              password=""
               username=""
+              password=""
               initialSize="2"
               maxActive="3"
               maxIdle="1"
