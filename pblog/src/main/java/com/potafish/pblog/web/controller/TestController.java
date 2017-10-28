@@ -83,10 +83,10 @@ public class TestController {
 
     @RequestMapping(value = "user/{id}", method = RequestMethod.GET)
     public String findUserById(@PathVariable(value = "id") Long id) {
-        //User user = userService.findById(id);
-//        return user.getId() + ": " + user.getLoginName();
-        logger.debug("id: " + id);
-        return id + "";
+        User user = userService.findById(id);
+        return user.getId() + ": " + user.getLoginName();
+//        logger.debug("id: " + id);
+//        return id + "";
     }
 
     @RequestMapping(value = "userProfile/{id}", method = RequestMethod.GET)
